@@ -1,0 +1,95 @@
+.hero{
+    position: relative;
+    padding: 0 0 1rem 0 ;
+}
+
+.image{
+    position: relative;
+    display: block;
+}
+
+.blur{
+    position: absolute;
+   background: linear-gradient( 180deg, rgba(255,255,255,1), rgba(255,255,255,0));
+    height: 300px;
+    width: 320px;
+    border-radius: 10px;
+    opacity: 80%;
+    top: 0px;
+}
+.texts{
+    position: absolute;
+    top: 1.5rem;
+    left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    font-family: montserrat;
+}
+
+.one{
+    color: #313834;
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing:-4px;
+}
+.two{
+    color: #313834;
+    font-size: 36px;
+}
+.three{
+    color: #313834;
+    font-size: 16px;
+}
+.four{
+    color: #630800;
+    font-size: 32px;
+    letter-spacing: 0.22em;
+    font-weight: 600;
+}
+
+.cta{
+    position: absolute;
+    background-color: #DD8E8A;
+    height:42.53px;
+    width: 150px;
+    color: #fff;
+    top: 230px;
+    left: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-family: montserrat;
+}
+
+.text{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.discount{
+    position: absolute;
+    width: 150px;
+    height: 38.97px;
+    background: #313834;
+    transform: rotate(-42.68deg);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Montserrat;
+    top: 27.9rem;
+    left: -.07555rem;
+}
+
+.hanging{
+    display: relative;
+    
+}
