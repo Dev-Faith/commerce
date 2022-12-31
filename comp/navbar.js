@@ -13,7 +13,7 @@ const Navbar = () => {
           <Image src="/logo.svg" alt="logo" height={27} width={93} />
         </div>
         <div className="bugger" onClick={() => setMenu(!menu)}>
-          {!menu ? <RxCross1 /> : <BsTextRight />}
+          {!menu ? <BsTextRight /> : <RxCross1 />}
         </div>
         <div className={!menu ? "menu off" : "menu"}>
           <div className="menu-list">
