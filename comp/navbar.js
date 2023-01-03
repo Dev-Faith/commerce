@@ -3,7 +3,7 @@ import { useState } from "react";
 import { BsTextRight } from "react-icons/bs";
 import { RxCross1 } from "react-icons/rx";
 import Home from '../pages/home';
-import { motion } from "framer-motion";
+import { motion, spring } from "framer-motion";
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
 
@@ -17,17 +17,11 @@ const Navbar = () => {
         </div>
         <motion.div
           className={!menu ? "menu off" : "menu"}
-          animate={{
-            scale: 1,
-          }}
-          initial={{
-            scale: -1,
-          }}
 
-          transform={{
-            duration: 10000,
+          transition={{
+           layout: {duration: 1, type: "spring"}
           }}
-         
+          layout
         >
           <div className="menu-list">
             <ul>
