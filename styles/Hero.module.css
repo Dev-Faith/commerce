@@ -28,17 +28,17 @@
 }
 
 .one{
-    color: #313834;
+    color: var(--black);
     font-size: 64px;
     font-weight: bold;
     letter-spacing:-4px;
 }
 .two{
-    color: #313834;
+    color: var(--black);
     font-size: 36px;
 }
 .three{
-    color: #313834;
+    color: var(--black);
     font-size: 16px;
 }
 .four{
@@ -50,10 +50,10 @@
 
 .cta{
     position: absolute;
-    background-color: #DD8E8A;
+    background-color: var(--CTA);
     height:42.53px;
     width: 150px;
-    color: #fff;
+    color: var(--background-color);
     top: 230px;
     left: 1rem;
     display: flex;
@@ -77,13 +77,13 @@
     position: absolute;
     width: 150px;
     height: 38.97px;
-    background: #313834;
+    background: var(--black);
     transform: rotate(-42.68deg);
     display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: #fff;
+    color: var(--background-color);
     font-family: "Montserrat";
     top: 27.9rem;
     left: -.07555rem;

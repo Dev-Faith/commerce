@@ -12,18 +12,18 @@ const Navbar = () => {
         <div className="logo">
           <Image src="/logo.svg" alt="logo" height={27} width={93} />
         </div>
-        <div className="bugger" onClick={() => setMenu(!menu)}>
+        <div  className="bugger" onClick={() => setMenu(!menu)}>
           {!menu ? <BsTextRight /> : <RxCross1 />}
         </div>
         <motion.div
           className={!menu ? "menu off" : "menu"}
-
           transition={{
-           layout: {duration: 1, type: "spring"}
+            layout: { duration: 1, type: "spring" },
           }}
           layout
         >
-          <div className="menu-list">
+          <div
+            className="menu-list">
             <ul>
               <li className="active">Home</li>
               <li>Shop</li>

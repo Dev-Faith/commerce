@@ -1,3 +1,10 @@
+:root{
+  --black: #313834;
+  --CTA: #DD8E8A;
+  --background-color: #F2E9EB;
+  --menu-bg: rgba(221, 142, 138, 0.79);
+  --menu-list: #F2E9EB;
+}
 
 
 *{
@@ -22,7 +29,7 @@
 }
 
 .app{
-    background-color: #F2E9EB;
+    background-color: var(--background-color);
 }
 
 footer{
@@ -37,7 +44,7 @@ footer{
 }
 
 .menu{
-  background-color: rgba(221, 142, 138, 0.79);
+  background-color: var(--menu-bg);
   width: 360px;
   height: 304px;
   display: flex;
@@ -56,6 +63,7 @@ footer{
   list-style: none;
   text-align: center;
   font-size: 36px;
+  color: var(--menu-list);
 }
 
 .menu-list ul{
@@ -64,19 +72,21 @@ footer{
   gap: 20px;
 }
 
-.active{
+.menu-list ul li.active{
   font-weight: 600;
   position: relative;
+  color: var(--black);
 }
 
 .active::after{
   content: "";
-  background-color: black;
+  background-color: var(--black);
   display: flex;
   position: absolute;
   left: 2.5rem;
   padding: .5px;
   width: 69px;
+  color: var(--black);
 }
 
 .off{
