@@ -31,7 +31,7 @@ footer{
   justify-content: center;
   position: relative;
   bottom: 0rem;
-  font-family: montserrat;
+  font-family: "montserrat";
   margin-top: 6rem;
   padding-bottom: 1rem;
 }
@@ -52,7 +52,7 @@ footer{
 }
 
 .menu-list ul li{
-  font-family: montserrat;
+  font-family: "montserrat";
   list-style: none;
   text-align: center;
   font-size: 36px;

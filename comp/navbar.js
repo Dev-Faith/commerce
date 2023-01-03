@@ -3,7 +3,7 @@ import { useState } from "react";
 import { BsTextRight } from "react-icons/bs";
 import { RxCross1 } from "react-icons/rx";
 import Home from '../pages/home';
-
+import { motion } from "framer-motion";
 const Navbar = () => {
     const [menu, setMenu] = useState(false);
 
@@ -15,7 +15,20 @@ const Navbar = () => {
         <div className="bugger" onClick={() => setMenu(!menu)}>
           {!menu ? <BsTextRight /> : <RxCross1 />}
         </div>
-        <div className={!menu ? "menu off" : "menu"}>
+        <motion.div
+          className={!menu ? "menu off" : "menu"}
+          animate={{
+            scale: 1,
+          }}
+          initial={{
+            scale: -1,
+          }}
+
+          transform={{
+            duration: 10000,
+          }}
+         
+        >
           <div className="menu-list">
             <ul>
               <li className="active">Home</li>
@@ -24,7 +37,7 @@ const Navbar = () => {
               <li>Account</li>
             </ul>
           </div>
-        </div>
+        </motion.div>
       </div>
     );
 }
