@@ -1,7 +1,10 @@
+import Search from '../comp/search';
+import styles from '../styles/Shop.module.css';
+
 const Shop = () => {
     return (
-        <div>
-            <h1>Hello, World</h1>
+        <div className={styles.shop}>
+            <Search/>
         </div>
     );
 };
