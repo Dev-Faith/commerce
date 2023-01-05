@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 import { BsTextRight } from "react-icons/bs";
 import { RxCross1 } from "react-icons/rx";
 import Home from "../pages/home";
@@ -7,7 +7,7 @@ import { motion, spring } from "framer-motion";
 import Link from "next/link";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
-
+  
   return (
     <div className="navbar">
       <div className="logo">
