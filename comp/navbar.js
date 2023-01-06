@@ -6,7 +6,8 @@ import { motion, spring } from "framer-motion";
 import Link from "next/link";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
-  
+  const [active, setActive] = useState(0);
+
   return (
     <div className="navbar">
       <div className="logo">
@@ -24,16 +25,25 @@ const Navbar = () => {
       >
         <div className="menu-list">
           <ul>
-            <li className="first">
+            <li
+              className={active === 1 ? "first active" : ""}
+              onClick={() => setActive(1)}
+            >
               <Link href="/">Home</Link>
             </li>
-            <li className="second">
+            <li
+              className={active === 2 ? "second active" : ""}
+              onClick={() => setActive(2)}
+            >
               <Link href="/shop">Shop</Link>
             </li>
-            <li className="third">
+            <li
+              className={active === 3 ? "third active" : ""}
+              onClick={() => setActive(3)}
+            >
               <Link href="/cart">Cart</Link>
             </li>
-            <li className="fourth">
+            <li className={active === 4 ? "fourth active":""} onClick={() => setActive(4)}>
               <Link href="/account">Account</Link>
             </li>
           </ul>

@@ -54,6 +54,7 @@ footer{
   z-index: 9999;
   border-radius: 10px 0 0 10px;
   backdrop-filter: blur(7px);
+   min-width: 100vw;
 }
 
 .menu-list ul li {
@@ -83,20 +84,26 @@ footer{
   gap: 20px;
 }
 
-.menu-list ul  li a:hover{
+/* .menu-list ul  li a:hover{
   font-weight: 600;
   position: relative;
   color:var(--black);
-}
+} */
 
-.menu-list ul li a:focus{
+/* .menu-list ul li a:focus{
+  font-weight: 600;
+  position: relative;
+  color: var(--black);
+  font-size: 36px;
+} */
+.menu-list ul li.active a{
   font-weight: 600;
   position: relative;
   color: var(--black);
   font-size: 36px;
 }
 
-.menu-list ul li a:focus::after{
+/* .menu-list ul li a:focus::after{
   content: "";
   background-color: var(--black);
   display: flex;
@@ -104,19 +111,29 @@ footer{
   padding: .5px;
   width: 69px;
   color: var(--black);
-}
+} */
 
-.menu-list ul li.first a:focus::after{
+ .menu-list ul li.first.active a::after{
     left: 16px;
 }
-.menu-list ul li.second a:focus::after{
+.menu-list ul li.second.active a::after{
     left: 8.5px;
 }
-.menu-list ul li.third a:focus::after{
+.menu-list ul li.third.active a::after{
     left: 1px;
 }
-.menu-list ul li.fourth a:focus::after{
+.menu-list ul li.fourth.active a::after{
     left: 35px;
+} 
+.menu-list ul li.active a::after{
+    left: 35px;
+     content: "";
+  background-color: var(--black);
+  display: flex;
+  position: absolute;
+  padding: .5px;
+  width: 69px;
+  color: var(--black);
 }
 
 .off{
@@ -139,4 +156,15 @@ footer{
 .search .glass{
   height: 20px;
   width: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .navbar{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .bugger{
+    display: none;
+  }
 }
