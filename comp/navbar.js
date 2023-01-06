@@ -6,7 +6,7 @@ import { motion, spring } from "framer-motion";
 import Link from "next/link";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
-  const [active, setActive] = useState(0);
+  const [active, setActive] = useState(1);
 
   return (
     <div className="navbar">
