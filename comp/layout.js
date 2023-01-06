@@ -1,4 +1,4 @@
-import Home from "../pages/home";
+
 import Footer from "./footer";
 import Navbar from "./navbar";
 import Head from "next/head";
@@ -7,7 +7,7 @@ const Layout = ({children}) => {
     return (
       <>
         <Head>
-          <title>Home App</title>
+          <title>E-commerce</title>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
           <link

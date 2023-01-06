@@ -18,6 +18,7 @@
    padding: 1rem 1rem .5rem 1rem;
 }
 
+
 .navbar .bugger {
   font-size: 1.5rem;
 }
@@ -37,8 +38,7 @@ footer{
   position: relative;
   bottom: 0rem;
   font-family: "montserrat";
-  margin-top: 6rem;
-  padding-bottom: 1rem;
+  padding: 1rem;
 }
 
 .menu{
