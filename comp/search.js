@@ -2,10 +2,12 @@
 import { AiOutlineSearch } from "react-icons/ai";
 const Search = () => {
     return (
-        <div className="search">
-            <p>Search...</p>
-            <AiOutlineSearch className="glass"/>
-        </div>
+      <div>
+        <form className="search-form">
+          <input type="text" className="search" />
+          <AiOutlineSearch className="glass" />
+        </form>
+      </div>
     );
 }
  

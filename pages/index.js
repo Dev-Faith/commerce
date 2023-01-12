@@ -43,6 +43,8 @@ export default function Home() {
 
       {/* ------------------------DESKTOP-VIEW----------------------/> */}
 
+      
+
     </>
   );
 }
