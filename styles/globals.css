@@ -84,6 +84,10 @@ footer{
   gap: 20px;
 }
 
+form input[type="text"]{
+  text-transform: lowercase;
+}
+
 .desktop-navbar{
   display: none;
 }
