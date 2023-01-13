@@ -84,6 +84,10 @@ footer{
   gap: 20px;
 }
 
+.desktop-navbar{
+  display: none;
+}
+
 /* .menu-list ul  li a:hover{
   font-weight: 600;
   position: relative;
@@ -188,6 +192,7 @@ position: relative;
   .desktop-navbar{
     position: relative;
     margin-right: 15rem;
+    display: inline-block;
   }
 
   .desktop-navbar ul{
