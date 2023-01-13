@@ -86,6 +86,7 @@ footer{
 
 form input[type="text"]{
   text-transform: lowercase;
+  font-family: "montserrat";
 }
 
 .desktop-navbar{

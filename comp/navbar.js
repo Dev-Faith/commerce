@@ -17,7 +17,7 @@ const Navbar = () => {
         <div className="desktop-navbar">
           <ul>
             <li
-              className={active === 1 ? "first active" : ""}
+              className={active === 1 ? "first active" : ""}s
               onClick={() => setActive(1)}
             >
               <Link href="/">Home</Link>

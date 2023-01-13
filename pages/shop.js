@@ -44,7 +44,7 @@ const Shop = () => {
   return (
     <motion.div className={styles.shop} layout>
       <Search query={query} setQuery={setQuery}/>
-      <motion.div className={styles.items} layout >
+      <motion.div className={styles.items} layout>
         {
             filtered.map((cloth) => (
               <motion.div key={cloth.id} className={styles.item} layout>

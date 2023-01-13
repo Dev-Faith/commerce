@@ -2,8 +2,9 @@
 import Footer from "./footer";
 import Navbar from "./navbar";
 import Head from "next/head";
+import { useState } from 'react';
 
-const Layout = ({children}) => {
+const Layout = ({ children }) => {
     return (
       <>
         <Head>
