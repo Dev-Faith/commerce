@@ -5,6 +5,7 @@
   --menu-bg: rgba(221, 142, 138, 0.79);
   --menu-list: #F2E9EB;
 }
+
 *{
   margin: 0;
   padding: 0;
@@ -25,6 +26,7 @@
 
 .container{
   margin: 0 1rem;
+  min-height: 100vh;
 }
 
 .app{
@@ -68,7 +70,7 @@ footer{
 }
 
 .menu-list ul li a{
-  color: var(--menu-list);
+  color: var(--black);
 }
 
 .menu-list ul li a {
@@ -179,43 +181,103 @@ position: relative;
   right: 1rem;
 }
 
-@media screen and (min-width: 900px) {
-  .navbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
+@media screen and (min-width: 600px) {
 
-  .bugger{
-    display: none;
-  }
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem .5rem 1rem;
+  position: fixed;
+  z-index: 9999;
+  backdrop-filter: blur(7px);
 
-  .menu{
-    display: none;
-  }
+}
 
-  .desktop-navbar{
-    position: relative;
-    margin-right: 15rem;
+  .off{
     display: inline-block;
   }
 
-  .desktop-navbar ul{
-    display: flex;
-    gap: 2rem;
-    font-family: "montserrat";
+  .bugger{
+    display:none;
   }
 
-  .desktop-navbar ul li {
-    list-style: none;
-  }
-  .desktop-navbar ul li a {
-    text-decoration: none;
-    color: var(--black);
+  .menu{
+    padding: 2rem;
+    background: none;
+    width: 360px;
+    height: 2rem;
   }
 
-  .navbar .logo .logo-image{
-    font-size: 64px;
-    font-weight: 800;
-  }
+  .menu{
+  background-color: none;
+  width: 360px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left:0;
+  top: 0;
+  
+  border-radius: 0;
+  backdrop-filter: blur(0);
+   min-width: 100vw;
+
+}
+
+.menu-list{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+  .menu-list ul li {
+  font-family: "montserrat";
+  list-style: none;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.menu-list ul li a{
+  color: var(--black);
+}
+
+.menu-list ul li a {
+  text-decoration: none;
+}
+.menu-list ul{
+  text-align: center;
+   display: flex;
+    flex-direction: row;
+}
+
+.menu-list ul li.active a{
+  font-weight: 600;
+  position: relative;
+  color: var(--black);
+  font-size: 17px;
+}
+
+.menu-list ul li.active a::after{
+  width: 30px;
+   background-color: var(--CTA);
+}
+
+.menu-list ul li.first.active a::after{
+    left: 15px;
+}
+.menu-list ul li.second.active a::after{
+    left: 8.5px;
+}
+.menu-list ul li.third.active a::after{
+    left: 5px;
+}
+.menu-list ul li.fourth.active a::after{
+    left: 20px;
+} 
+
 }

@@ -20,7 +20,7 @@ const Navbar = ({offScreen, setOffScreen}) => {
             className="logo-image"
           />
         </div>
-        <div className="desktop-navbar">
+        {/* <div className="desktop-navbar">
           <ul>
             <li
               id="menu"
@@ -51,7 +51,7 @@ const Navbar = ({offScreen, setOffScreen}) => {
               <Link href="/account">Account</Link>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="bugger" onClick={() => setOffScreen(!offScreen)}>
           {!offScreen ? <BsTextRight /> : <RxCross1 />}
         </div>
