@@ -64,29 +64,32 @@ const Navbar = ({offScreen, setOffScreen}) => {
         >
           <div className="menu-list">
             <ul>
-              <li
+              <li id = "menu"
                 className={active === 1 ? "first active" : ""}
                 onClick={() => setActive(1)}
               >
-                <Link href="/">Home</Link>
+                <Link id = "menu" href="/">Home</Link>
               </li>
               <li
+                  id="menu"
                 className={active === 2 ? "second active" : ""}
                 onClick={() => setActive(2)}
               >
-                <Link href="/shop">Shop</Link>
+                <Link  id = "menu" href="/shop">Shop</Link>
               </li>
               <li
+              id="menu"
                 className={active === 3 ? "third active" : ""}
                 onClick={() => setActive(3)}
               >
-                <Link href="/cart">Cart</Link>
+                <Link id = "menu" href="/cart">Cart</Link>
               </li>
               <li
+              id = "menu"
                 className={active === 4 ? "fourth active" : ""}
                 onClick={() => setActive(4)}
               >
-                <Link href="/account">Account</Link>
+                <Link  id = "menu" href="/account">Account</Link>
               </li>
             </ul>
           </div>
