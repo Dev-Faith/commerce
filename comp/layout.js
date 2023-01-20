@@ -20,7 +20,13 @@ const Layout = ({ children }) => {
 
         <div
           class="container"
-          onClick={(e) => e.target.id !== "menu" && setOffScreen(!offScreen)}
+          onClick={(e) => {
+            if (e.target.id !== "menu") {
+              if (offScreen === true) {
+                setOffScreen(!offScreen);
+              }
+            }
+          }}
         >
           <Navbar offScreen={offScreen} setOffScreen={setOffScreen} />
           {children}

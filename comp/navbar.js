@@ -12,29 +12,39 @@ const Navbar = ({offScreen, setOffScreen}) => {
     <>
       <div className="navbar">
         <div className="logo">
-          <Image src="/logo.svg" alt="logo" height={27} width={93} className="logo-image"/>
+          <Image
+            src="/logo.svg"
+            alt="logo"
+            height={27}
+            width={93}
+            className="logo-image"
+          />
         </div>
         <div className="desktop-navbar">
           <ul>
             <li
+              id="menu"
               className={active === 1 ? "first active" : ""}
               onClick={() => setActive(1)}
             >
               <Link href="/">Home</Link>
             </li>
             <li
+              id="menu"
               className={active === 2 ? "second active" : ""}
               onClick={() => setActive(2)}
             >
               <Link href="/shop">Shop</Link>
             </li>
             <li
+              id="menu"
               className={active === 3 ? "third active" : ""}
               onClick={() => setActive(3)}
             >
               <Link href="/cart">Cart</Link>
             </li>
             <li
+              id="menu"
               className={active === 4 ? "fourth active" : ""}
               onClick={() => setActive(4)}
             >
@@ -45,7 +55,7 @@ const Navbar = ({offScreen, setOffScreen}) => {
         <div className="bugger" onClick={() => setOffScreen(!offScreen)}>
           {!offScreen ? <BsTextRight /> : <RxCross1 />}
         </div>
-        <motion.div
+        <motion.div id ="menu"
           className={!offScreen ? "menu off" : "menu"}
           transition={{
             layout: { duration: 0.3, type: "spring" },
