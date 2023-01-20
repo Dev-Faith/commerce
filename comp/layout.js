@@ -5,6 +5,7 @@ import Head from "next/head";
 import { useState } from 'react';
 
 const Layout = ({ children }) => {
+  const [offScreen, setOffScreen] = useState(false);
     return (
       <>
         <Head>
@@ -15,10 +16,13 @@ const Layout = ({ children }) => {
             href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap"
             rel="stylesheet"
           />
-            </Head>
-            
-        <div class="container">
-          <Navbar />
+        </Head>
+
+        <div
+          class="container"
+          onClick={(e) => e.target.id !== "menu" && setOffScreen(!offScreen)}
+        >
+          <Navbar offScreen={offScreen} setOffScreen={setOffScreen} />
           {children}
           <Footer />
         </div>

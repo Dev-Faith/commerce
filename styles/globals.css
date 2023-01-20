@@ -213,4 +213,9 @@ position: relative;
     text-decoration: none;
     color: var(--black);
   }
+
+  .navbar .logo .logo-image{
+    font-size: 64px;
+    font-weight: 800;
+  }
 }
