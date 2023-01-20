@@ -70,7 +70,7 @@ footer{
 }
 
 .menu-list ul li a{
-  color: var(--black);
+  color: var(--menu-list);
 }
 
 .menu-list ul li a {
@@ -162,7 +162,6 @@ form input[type="text"]{
   padding : 7px 20px;
   margin-top: 44px;
   justify-content: space-between;
-  
 }
 
 .search-form{
@@ -187,30 +186,29 @@ position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem .5rem 1rem;
+  /* padding: 1rem 1rem .5rem 1rem; */
   position: fixed;
   z-index: 9999;
+  background-color: var(--background-color);
   backdrop-filter: blur(7px);
-
-}
+} 
 
   .off{
     display: inline-block;
   }
 
   .bugger{
-    display:none;
+    display: none;
   }
 
   .menu{
     padding: 2rem;
-    background: none;
     width: 360px;
     height: 2rem;
   }
 
   .menu{
-  background-color: none;
+    background-color: var(--menu-list);
   width: 360px;
   height: 2rem;
   display: flex;
@@ -219,11 +217,9 @@ position: relative;
   position: fixed;
   left:0;
   top: 0;
-  
   border-radius: 0;
-  backdrop-filter: blur(0);
-   min-width: 100vw;
-
+  z-index: -1;
+  backdrop-filter: blur(20px);
 }
 
 .menu-list{
