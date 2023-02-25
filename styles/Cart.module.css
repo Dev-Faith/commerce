@@ -69,3 +69,26 @@
     border-radius: 50%;
     font-size: 10px;
 }
+
+@media screen and (min-width: 900px){
+    .carts {
+       display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        column-gap: 5.5rem;
+        row-gap: 2rem;
+        padding-top: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 992px){
+    .carts {
+       display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        column-gap: 11rem;
+        row-gap: 2rem;
+        padding-top: 2rem;
+    }
+}

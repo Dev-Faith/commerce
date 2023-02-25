@@ -5,6 +5,9 @@
      flex-direction: column;
      padding-top: 5rem;
 }
+.deskHero{
+    display: none;
+}
 
 .hero{
     position: relative;
@@ -28,6 +31,7 @@
     opacity: 80%;
     top: 0px;
 }
+
 .texts{
     position: absolute;
     top: 1.5rem;
@@ -37,17 +41,30 @@
     gap: .2rem;
     font-family: "montserrat";
 }
+#desk{
+    display: none;
+}
 
 .one{
     color: var(--black);
     font-size: 64px;
     font-weight: bold;
     letter-spacing:-4px;
+    display: none;
 }
+
+.weText {
+    color: var(--black);
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing:-4px;
+}
+
 .two{
     color: var(--black);
     font-size: 36px;
 }
+
 .three{
     color: var(--black);
     font-size: 16px;
@@ -72,6 +89,7 @@
     justify-content: center;
     border-radius: 10px;
     font-family:"montserrat";
+    margin-top: .6rem;
 }
 
 .text{
@@ -104,10 +122,169 @@
     position: relative;
 }
 
+@media screen and (min-width: 600px) {
+ .mobileHero{
+     display: none;
+ }
+
+ .weText{
+     display: none;
+ }
+
+ .home{
+      display: flex;
+      /* align-items: center;
+      justify-content: center; */
+
+      position: relative;
+      top: 4rem;
+ }
+
+ .home .text{
+     position: relative;
+     bottom: -10rem;
+ }
+
+ .home .cta{
+   margin-top: 2rem;
+ }
+ .texts{
+     position: relative;
+ }
+
+ .texts h1.one{
+     display: inline-block;
+    position: absolute;
+    top: -5.3rem;
+    left: -15.5rem;
+    font-size: 25px;
+    color: var(--background-color);
+    width: 217px;
+    height: 155px;
+    letter-spacing: 1px;
+    font-weight: normal;
+ }
+
+ .textBg{
+    background-image: linear-gradient(to right, rgba(49, 56, 52, 1) 60%, rgba(49, 56, 52, 0) 100% );
+    width: 200px;
+    height: 60.4px;
+    opacity: 40%;
+    position: absolute;
+    top: -5.3rem;
+    left: -16.5rem;
+    border-radius: 10px;
+ }
+
+ .deskHero{
+     display: flex;
+     width: 500px;
+     height: 203.04px;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .hero{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .blur{
+        display: none;
+    }
+
+    .two, .three, .four, .cloth {
+        display: none;
+    }
+
+    .discount{
+        top: -14.5rem;
+        left: 8rem;
+    }
+}
+
 
 @media screen and (min-width: 900px) {
-    .home{
+   .mobileHero{
+     display: none;
+ }
+
+ .weText{
+     display: none;
+ }
+
+ .home{
+      display: flex;
+      /* align-items: center;
+      justify-content: center; */
+
+      position: relative;
+      top: 4rem;
+ }
+
+ .home .text{
+     position: relative;
+     bottom: -10rem;
+ }
+
+ .home .cta{
+   margin-top: 7rem;
+ }
+ .texts{
+     position: relative;
+ }
+
+ .texts h1.one{
+    position: absolute;
+    top: -6rem;
+    left: -22rem;
+    font-size: 25px;
+    color: var(--background-color);
+    width: 100px;
+    height: 50px;
+    letter-spacing: 1px;
+    font-weight: normal;
+ }
+
+ .textBg{
+    background-image: linear-gradient(to right, rgba(49, 56, 52, 1) 60%, rgba(49, 56, 52, 0) 100% );
+    width: 200px;
+    height: 75px;
+    opacity: 40%;
+    position: absolute;
+    top: -6.2rem;
+    left: -22.8rem;
+    border-radius: 10px;
+ }
+
+ .deskHero{
+     display: flex;
+      width: 700px;
+     height: 284.25px;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .hero{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+ .blur{
         display: none;
+    }
+
+    .two, .three, .four, .cloth {
+        display: none;
+    }
+
+    .discount{
+        top: -20rem;
+        left: 15rem;
     }
     
     

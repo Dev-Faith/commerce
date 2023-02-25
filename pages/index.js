@@ -10,11 +10,14 @@ export default function Home() {
       <div className={styles.home}>
         <div className={styles.hero}>
           <div className={styles.image}>
-            <Image src="/hero.png" width={320} height={297} alt="hero" />
+            <Image class ={styles.mobileHero} src="/hero.png" width={320} height={297} alt="hero" />
+            <Image class ={styles.deskHero} src="/desk.png" width={1086} height={441} alt="hero" />
           </div>
           <div className={styles.blur}></div>
           <div className={styles.texts}>
-            <h1 className={styles.one}>We Sell</h1>
+            <div className={styles.textBg}></div>
+            <h1 className={styles.one}>BEST <br></br>DEALS</h1>
+            <h1 className={styles.weText}>WE SELL</h1>
             <h1 className={styles.two}>The Best</h1>
             <h3 className={styles.three}>Just for</h3>
             <h2 className={styles.four}>YOU</h2>
